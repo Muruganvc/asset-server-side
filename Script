@@ -1,0 +1,15 @@
+Create Database Asset;
+Go
+
+CREATE TABLE [dbo].[Tbl_Asset](
+	[asset_id] UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
+	[file_name] [varchar](100) NULL,
+	[mime_type] [varchar](50) NULL,
+	[created_by] [varchar](50) NULL,
+	[email] [varchar](50) NULL,
+	[country] [varchar](50) NULL,
+	[description] [varchar](500) NULL
+) 
+Go
+
+Select * from Tbl_Asset
